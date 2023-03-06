@@ -19,7 +19,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-family: "Raleway", sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   color: var(--pale-blue);
   background-color: var(--very-dark-blue);
@@ -31,21 +31,21 @@ body {
 }
 
 .container {
-  width: 920px;
+  width: 57.5rem;
   display: flex;
   align-items: flex-end;
-  gap: 30px;
+  gap: 1.875rem;
 }
 
 .bloc_images {
   width: 38%;
-  padding: 40px;
+  padding: 2.5rem;
   background-color: var(--dark-blue);
-  border-radius: 10px 100px 10px 10px;
+  border-radius: 0.625rem 6.25rem 0.625rem 0.625rem;
 }
 
 .logo {
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 .icons {
@@ -55,10 +55,10 @@ body {
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   background: var(--very-dark-blue);
-  border-radius: 10px;
+  border-radius: 0.625rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,43 +67,43 @@ body {
 .bloc_input {
   position: relative;
   width: 62%;
-  padding: 40px;
+  padding: 2.5rem;
   background-color: var(--dark-blue);
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .bloc_input h1 {
   display: block;
   margin-bottom: 1rem;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
 }
 
 .progress {
   position: relative;
   width: auto !important;
-  padding: 4px;
+  padding: 0.25rem;
   margin-bottom: 0.5rem;
   background-color: var(--very-dark-blue);
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 
 .progress_bar {
   position: relative;
   width: 81.5%;
   transition: none 0s ease 0s;
-  height: 14px;
-  border-radius: 10px;
+  height: 0.875rem;
+  border-radius: 0.625rem;
   background: var(--gradient);
 }
 
 .progress_bar:after {
   content: "";
   position: absolute;
-  width: 10px;
-  height: 10px;
-  top: 2px;
-  right: 2px;
+  width: 0.625rem;
+  height: 0.625rem;
+  top: 0.125rem;
+  right: 0.125rem;
   background: var(--white);
   border-radius: 50%;
 }
@@ -116,11 +116,11 @@ body {
 
 .popup {
   position: absolute;
-  top: -40px;
-  right: 40px;
+  top: -2.5rem;
+  right: 2.5rem;
   padding: 0.75rem 1.5rem;
   background: #fff;
-  border-radius: 10px 10px 0 10px;
+  border-radius: 0.625rem 0.625rem 0 0.625rem;
 }
 
 .popup:after {
@@ -128,7 +128,7 @@ body {
   position: absolute;
   width: 0px;
   height: 0px;
-  bottom: -20px;
+  bottom: -1.25rem;
   right: 0px;
   border-left: 20px solid transparent;
   border-right: 0px solid transparent;
@@ -139,7 +139,7 @@ body {
   text-transform: uppercase;
   color: var(--grayish-blue);
   font-weight: 600;
-  font-size: 0.62 5rem;
+  font-size: 0.625rem;
   display: flex;
   align-items: center;
 }
@@ -148,7 +148,7 @@ body {
   color: var(--very-dark-blue);
   font-size: 2.125rem;
   font-weight: 700;
-  padding-right: 8px;
+  padding-right: 0.5rem;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -174,14 +174,18 @@ body {
     width: 100%;
   }
 
+  .bloc_input h1 {
+    text-align: center;
+  }
+
   .progress_labels {
     margin-bottom: 1rem;
   }
 
   .popup {
     top: initial;
-    right: calc(50% - 80px);
-    border-radius: 10px;
+    right: calc(50% - 5rem);
+    border-radius: 0.625rem;
   }
 
   .popup:after {
